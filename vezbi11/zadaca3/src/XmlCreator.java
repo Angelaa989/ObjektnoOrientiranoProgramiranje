@@ -8,8 +8,7 @@ class XmlCreator {
 
             writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
             writer.write("<Studenti>\n");
-
-            // Пишување на секој студент како XML елемент
+            
             for (int i = 0; i < studenti.size(); i++) {
                 Student student = studenti.get(i);
                 writer.write("\t<Student id=\"" + i + "\">\n");
@@ -19,7 +18,6 @@ class XmlCreator {
                 writer.write("\t</Student>\n");
             }
 
-            // Пишување на крајот на XML документот
             writer.write("</Studenti>\n");
 
             System.out.println("XML dokumentot e uspesno kreiran.");
